@@ -1,0 +1,56 @@
+local sex = loadstring(game:HttpGet('https://raw.githubusercontent.com/3345-c-a-t-s-u-s/Garry-UI/main/source'))()
+
+local Window = sex:Create('HUMIDITY HUB','D-DAY Script by Humidity','by Humidity')
+local ExampleTab = Window:CreateTab('Main','Main Scripts')
+
+ExampleTab:CreateToggle("Silent Aim", false, function(val)
+    print('toggle', val)
+    
+    -- Define the code to be executed
+    local codeToExecute = "print('Hello, World!')"
+    
+    -- Load and execute the code
+    local func = loadstring(game:HttpGet("https://pastebin.com/raw/1gzezE9m"))()
+    
+    if func then
+        func()
+    else
+        print("Failed to load the code.")
+    end
+end)
+
+ExampleTab:CreateLabel("Misc")
+
+
+
+ExampleTab:CreateToggle("ESP", false, function(val)
+    print('toggle', val)
+    
+    -- Define the code to be executed
+    local codeToExecute = "print('Hello, World!')"
+    
+    -- Load and execute the code
+    local func = pcall(function() loadstring(game:HttpGet('https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua'))() end)
+        
+    if func then
+        func()
+    else
+        print("Failed to load the code.")
+    end
+end)
+
+ExampleTab:CreateToggle("FOV", false, function(val)
+    print('toggle', val)
+    
+    -- Define the code to be executed
+    local codeToExecute = "print('Hello, World!')"
+    
+    -- Load and execute the code
+    local func = loadstring(game:HttpGet("https://pastebin.com/raw/q9K8YV34"))()
+        
+    if func then
+        func()
+    else
+        print("Failed to load the code.")
+    end
+end)
